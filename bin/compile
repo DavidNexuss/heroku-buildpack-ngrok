@@ -9,6 +9,7 @@ indent() {
 
 # parse args
 export BUILD_DIR=$1
+BP_DIR="$(cd "$(dirname "$0")" && pwd)"
 CACHE_DIR=$2
 OPT_DIR=$BP_DIR/../opt/
 
