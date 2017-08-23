@@ -16,9 +16,6 @@ curl --silent --retry 3 -o ngrok.zip -L "https://bin.equinox.io/c/4VmDzA7iaHb/ng
 unzip ngrok.zip -d $BUILD_DIR/.heroku/bin > /dev/null 2>&1
 chmod +x $BUILD_DIR/.heroku/bin/ngrok
 
-echo "-----> Installing screen... "
-apt-get install screen
-
 cp $OPT_DIR/with_ngrok $BUILD_DIR/.heroku/bin/with_ngrok
 chmod +x $BUILD_DIR/.heroku/bin/with_ngrok
 echo " done"
